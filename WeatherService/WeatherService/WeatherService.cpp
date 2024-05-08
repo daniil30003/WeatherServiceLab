@@ -9,12 +9,16 @@
 int main()
 {
 	std::locale::global(std::locale{ ".UTF-8" });
-	std::cout.imbue(std::locale(""));
+	
+	//std::cout.imbue(std::locale(""));
 
 	JsonService js;
 	Weather w = js.getWeather("../../weather.json");
 	w.print();
+	std::cout << std::endl;
 
+
+	setlocale(LC_ALL, "Russian");
 	XmlService xs;
 	Weather w2 = xs.getWeather("../../weather.xml");
 	w2.print();
