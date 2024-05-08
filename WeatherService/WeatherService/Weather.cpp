@@ -6,11 +6,11 @@ Weather::Weather(std::string city, double lon, double lat, double temperature, s
 void Weather::print() const
 {
 	std::cout << "Weather:"
-		<< "\n\tcity: " << city
-		<< "\n\lon: " << lon
-		<< "\n\lat: " << lat
-		<< "\n\temperature: " << temperature
-		<< "\n\weather: " << weather
-		<< "\n\windSpeed: " << windSpeed
-		<< "\n\clouds: " << clouds;
+		<< "\n\tcity: \t\t" << city
+		<< "\n\tlon: \t\t" << lon
+		<< "\n\tlat: \t\t" << lat
+		<< "\n\temperature: \t" << temperature
+		<< "\n\tweather: \t" << weather
+		<< "\n\twindSpeed: \t" << windSpeed
+		<< "\n\tclouds: \t" << clouds;
 }
