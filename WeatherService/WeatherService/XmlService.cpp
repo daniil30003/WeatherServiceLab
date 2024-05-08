@@ -14,7 +14,7 @@ Weather XmlService::getWeather(std::string s)
         as_string(); //  Киров
     double lon = node.child("city").child("coord").
         attribute("lon").
-        as_int(); // 49.6601
+        as_double(); // 49.6601
     double lat = node.child("city").child("coord").attribute("lat").as_double(); // 58.5966
     double temperature = node.child("temperature").
         attribute("value").
